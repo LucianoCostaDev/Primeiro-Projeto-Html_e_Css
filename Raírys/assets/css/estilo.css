@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/*  font-family: 'Roboto', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
+*/
+
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+div.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0px 160px 0px 160px;
+    background-color: #8C4646;
+}
+
+div.logo{
+    display: flex;
+    align-items: center;
+    animation: displace-animation 2s forwards;
+    
+}
+
+div.logo a img{
+    height: 60px;
+}
+
+@keyframes displace-animation{
+    0%{
+        transform: translatey(-100px);
+    }
+
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+div.logo img{
+    height: 100px;
+}
+
+div.menu{
+ display: flex;
+ align-items: center;
+ animation: displace-animation 2s forwards;
+}
+
+@keyframes btn-animation{
+    0%{
+        transform: translateY(0px); 
+    }
+
+    50%{
+        transform: translateY(-4px);
+        
+    }
+
+    100%{
+        transform: translateY(0px)
+    }
+}
+
+nav ul, nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav a:hover{
+    background-color: #38040E;
+    display: inline-block;
+    transition: 400ms;
+    animation: btn-animation 1s forwards;
+}
+
+div.box-container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+section#banner{
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/banner.jpg');
+    border: 1px solid #8C4646;
+    border-bottom: 3px solid #8C4646;
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+div.colum{
+    flex-direction: column;
+}
+
+div.banner-headline{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.banner-headline h1{
+    color: #8C4646;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px #000;
+    max-width: 400px;
+    margin: 0;
+    padding: 0;
+    animation: desloc-animation 2s forwards;
+}
+
+@keyframes desloc-animation{
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+
+div.banner-headline h2{
+    color: #8C4646;
+    font-size: 20px;
+    max-width: 400px;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    animation: desloc-animation 2s forwards;
+}
+
+div.banner-options{
+    height: 130px;
+    display: flex;
+    text-align: center;
+    animation: opacbanner-animation 2s forwards;
+}
+
+@keyframes opacbanner-animation{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.banner1, .banner2, .banner3{
+    flex: 1;
+    color: #fff;
+    padding: 15px;
+}
+
+div.banner1{
+    background-color: #8C4646;
+}
+
+div.banner2{
+    background-color: #663333;
+}
+
+div.banner3{
+    background-color: #38040E;
+}
+
+div.banner-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+div.banner-description{
+    font-size: 14px;
+    font-family: Roboto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+div.banner-options a{
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div.banner-options a:hover{
+    background-color: #fff;
+    transition: 200ms;
+    color: #38040E;
+}
+
+section#geral{
+    display: flex;
+    justify-content: center;
+}
+
+section#geral div.container{
+    background: none;
+}
+
+#geral section{
+    flex: 2;
+}
+
+#geral aside{
+    flex: 1;
+}
+
+.widget-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget-title-text{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.widget-title-bar{
+    width: 70px;
+    height: 2px;
+    background-color: #8C4646;
+    margin-top: 5px;
+}
